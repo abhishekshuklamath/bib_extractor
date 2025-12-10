@@ -1,6 +1,3 @@
-# extract_max_match_regions_cnn.py
-# Usage: python extract_max_match_regions_cnn.py <templates_folder> <images_folder> <threshold>
-
 import sys
 import os
 import numpy as np
@@ -118,7 +115,7 @@ def main(templates_dir, images_dir, threshold):
 
 if __name__ == '__main__':
     if len(sys.argv) != 4:
-        print("Usage: python extract_max_match_regions_cnn.py <templates_folder> <images_folder> <threshold>")
+        print("Usage: python bib_extract.py <templates_folder> <images_folder> <threshold>")
         sys.exit(1)
     tpl_dir, img_dir, thresh = sys.argv[1], sys.argv[2], sys.argv[3]
     try:
